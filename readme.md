@@ -12,6 +12,8 @@ Features:
 - Works in the editor.
 - Hiding children works.
 - Customizable horizontal and vertical margins between the child nodes.
+- Icon:
+![HFLowContainer Icon](h_flow_container/h_flow_container.svg)
 
 The container does (currently) not support:
 - Child scaling.
