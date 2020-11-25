@@ -1,7 +1,7 @@
 tool
 extends Container
 
-class_name HFlowContainer
+class_name HFlowContainer, "./h_flow_container.svg"
 
 # The flow container will fit as many children in a row as it can
 # using their minimum size, and will then continue on the next row.

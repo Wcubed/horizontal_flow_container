@@ -6,6 +6,8 @@
 [node name="Control" type="Control"]
 anchor_right = 1.0
 anchor_bottom = 1.0
+margin_left = 2.0
+margin_right = 2.0
 theme = ExtResource( 2 )
 __meta__ = {
 "_edit_use_anchors_": false
@@ -84,6 +86,8 @@ margin_top = 54.0
 margin_right = 274.0
 margin_bottom = 78.0
 text = "Checkbox"
+
+[node name="NotAControlNode" type="Node" parent="PanelContainer/HFlowContainer"]
 
 [node name="CheckButton" type="CheckButton" parent="PanelContainer/HFlowContainer"]
 margin_left = 279.0

@@ -15,9 +15,10 @@ _global_script_classes=[ {
 "path": "res://h_flow_container/h_flow_container.gd"
 } ]
 _global_script_class_icons={
-"HFlowContainer": ""
+"HFlowContainer": "res://h_flow_container/h_flow_container.svg"
 }
 
 [application]
 
 config/name="horizontal_flow_container"
+run/main_scene="res://example_scenes/example_1.tscn"
