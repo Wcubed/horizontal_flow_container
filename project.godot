@@ -1,0 +1,23 @@
+; Engine configuration file.
+; It's best edited using the editor UI and not directly,
+; since the parameters that go here are not all obvious.
+;
+; Format:
+;   [section] ; section goes between []
+;   param=value ; assign values to parameters
+
+config_version=4
+
+_global_script_classes=[ {
+"base": "Container",
+"class": "HFlowContainer",
+"language": "GDScript",
+"path": "res://h_flow_container/h_flow_container.gd"
+} ]
+_global_script_class_icons={
+"HFlowContainer": ""
+}
+
+[application]
+
+config/name="horizontal_flow_container"
