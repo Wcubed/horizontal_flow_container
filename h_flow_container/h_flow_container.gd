@@ -18,7 +18,7 @@ export var vertical_margin: float = 5
 
 # Used to make our parent re-evaluate our size when we have to create more or
 # less rows to fit in all the children.
-var _reported_height_at_last_minimum_size_call := 0
+var _reported_height_at_last_minimum_size_call: float = 0
 
 # Called when the node enters the scene tree for the first time.
 func _ready():
@@ -27,7 +27,7 @@ func _ready():
 
 func _get_minimum_size() -> Vector2:
 	# Our minimum width is the width of the widest child.
-	var max_requested_width := 0
+	var max_requested_width: float = 0
 	
 	for child in get_children():
 		# Check if the child is actually a `Control`.
@@ -66,9 +66,9 @@ func _notification(what):
 func _calculate_layout(apply: bool) -> float:
 	# Where to place the next child.
 	var next_location: Vector2 = Vector2(0, 0)
-	var row_height: int = 0
+	var row_height: float = 0
 	# Used to calculate when to apply the horizontal margin.
-	var children_in_current_row := 0
+	var children_in_current_row: float = 0
 	
 	for child in get_children():
 		# Check if the child is actually a `Control`.
@@ -92,7 +92,8 @@ func _calculate_layout(apply: bool) -> float:
 			row_height = 0
 			children_in_current_row = 0
 		
-		fit_child_in_rect(child, Rect2(next_location, requested_size))
+		if apply:
+			fit_child_in_rect(child, Rect2(next_location, requested_size))
 		
 		if requested_size.y > row_height:
 			row_height = requested_size.y
