@@ -19,3 +19,10 @@ The container does (currently) not support:
 - Child scaling.
 - Child rotating.
 - Child Size Flags ("Fill", "Expand" etc.)
+
+# Changelog
+
+- 1.0.0: Initial relase.
+- 1.0.1: Fixed "narrowing conversion" warnings.
+- 1.0.2: Works by default in ScrollContainer.
+         (By always settting horizontal size flag to EXPAND + FILL)
