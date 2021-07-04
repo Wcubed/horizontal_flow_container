@@ -10,6 +10,7 @@ The node is called "HFlowContainer" and is a child of "Container".
 Features:
 - Updates when it's width is changed.
 - Works in the editor.
+- Works in ScrollContainer.
 - Hiding children works.
 - Customizable horizontal and vertical margins between the child nodes.
 - Icon:
@@ -22,7 +23,7 @@ The container does (currently) not support:
 
 # Changelog
 
-- 1.0.0: Initial relase.
+- 1.0.0: Initial release.
 - 1.0.1: Fixed "narrowing conversion" warnings.
 - 1.0.2: Works by default in ScrollContainer.
          (By always settting horizontal size flag to EXPAND + FILL)
