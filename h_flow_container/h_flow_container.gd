@@ -22,7 +22,7 @@ var _reported_height_at_last_minimum_size_call: float = 0
 
 
 func _init() -> void:
-	size_flags_horizontal = SIZE_EXPAND | SIZE_FILL
+	size_flags_horizontal = SIZE_EXPAND_FILL
 
 
 func _ready():

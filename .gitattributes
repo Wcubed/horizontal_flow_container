@@ -9,4 +9,8 @@
 /LICENSE export-ignore
 /project.godot export-ignore
 /readme.md export-ignore
+/runtest.cmd export-ignore
+/runtest.sh export-ignore
 /screenshots export-ignore
+/addons export-ignore
+/test export-ignore
